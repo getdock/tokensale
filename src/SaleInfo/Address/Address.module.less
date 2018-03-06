@@ -1,0 +1,69 @@
+@value commonStyles: 'Components.module.less';
+@value content, linkBtn, no-mobile, secondarySection from commonStyles;
+
+@import '../../Components.module.less';
+
+.root {
+  background: linear-gradient(252deg, @color-primary, rgb(63, 142, 182));
+  color: white;
+  padding-top: 3rem;
+  padding-bottom: 6.5rem;
+}
+
+.form {
+  margin-top: 3.4rem;
+  composes: content;
+  display: flex;
+  flex-direction: column;
+  max-width: 64rem;
+  text-align: left;
+
+  label {
+    font-size: 2.5rem;
+  }
+
+  input[type=text] {
+    height: 6rem;
+    color: @color-secondary;
+    max-width: 64rem;
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+
+.formBottom {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.toggeQR {
+  composes: linkBtn;
+  composes: no-mobile;
+  margin-left: auto;
+}
+
+.QRFrame {
+  text-align: center;
+  margin-top: 1rem;
+  background: white;
+  border-radius: .5rem;
+  padding: 3rem;
+}
+
+.countdownSection {
+  composes: secondarySection;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.countdown {
+  composes: textSecondary;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+
+  time {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+}

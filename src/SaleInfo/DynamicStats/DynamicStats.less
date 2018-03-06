@@ -1,0 +1,32 @@
+@import '../../Components.module.less';
+
+// NOTE: it's not inside of a module, since image loading breaks
+.progressBar {
+  background-color: @color-primary;
+  overflow: hidden;
+
+  &:not(.no-animate) {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -1.72rem;
+      bottom: 0;
+      right: 0;
+      background: url(./progress-bg.png) repeat-x;
+      background-size: contain;
+      animation: animate-progress .5s linear infinite;
+      will-change: transform;
+    }
+  }
+}
+
+@keyframes animate-progress {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(1.72rem);
+  }
+}

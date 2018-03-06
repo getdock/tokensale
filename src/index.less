@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,700,300,300italic,400italic,700italic);
+
+@import './Components.module.less';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.625em; /* equals to 10px*/
+  font-family: 'Lato', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: @black;
+  margin: 0;
+  padding: 0;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+input[type=text] {
+  border-radius: .5rem;
+  box-shadow: 0 .2rem .3rem 0 rgba(0, 0, 0, 0.06);
+  border: solid .1rem rgb(186, 186, 186);
+  height: 5rem;
+  padding: 1.2rem 1.6rem;
+  font-size: 2.2rem;
+
+  &::placeholder {
+    color: rgba(104, 104, 113, 0.25);
+  }
+}
+
+button {
+  border-radius: 100rem;
+  height: 5rem;
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 0 2.5rem;
+  user-select: none;
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: .6em;
+}
+
+section {
+  padding: 2rem;
+}
+
+a {
+  color: rgb(76, 155, 194);
+  text-decoration: none;
+}

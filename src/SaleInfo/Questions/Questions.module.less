@@ -1,0 +1,32 @@
+@value commonStyles: 'Components.module.less';
+@value content, textSecondary from commonStyles;
+
+@import '../../Components.module.less';
+
+.root {
+  text-align: left;
+  padding-top: 6rem;
+
+  ol {
+    margin-left: 0;
+    padding-left: 2rem;
+
+    li {
+      margin-left: 0;
+      padding-left: 0;
+      font-weight: bold;
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      p {
+        font-weight: normal;
+        margin-left: -2rem;
+        margin-top: 0.5rem;
+        color: @color-secondary;
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

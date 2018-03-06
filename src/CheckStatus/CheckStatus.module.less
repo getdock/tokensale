@@ -1,0 +1,44 @@
+@value commonStyles: 'Components.module.less';
+@value textSecondary, sectionSubtitle, content from commonStyles;
+
+.content {
+  composes: content;
+  max-width: 70rem;
+  padding-bottom: 19rem;
+}
+
+.form {
+  border-radius: .3rem;
+  box-shadow: 0 .5rem 1.9rem 0 rgba(0, 0, 0, 0.08);
+  border: solid .1rem rgb(229, 229, 229);
+  border-left: solid .2rem rgb(124, 71, 171);
+  padding: 2.6rem 3rem 3.7rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 3rem;
+
+  input[type=text] {
+    background-color: rgb(251, 251, 251);
+  }
+}
+
+.submit {
+  composes: btnPrimary from 'Components.module.less';
+  align-self: flex-end;
+  min-width: 26rem;
+  margin-top: 1rem;
+}
+
+.countdown {
+  margin-top: 6.4rem;
+  composes: textSecondary;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+
+  time {
+    font-size: 3.5rem;
+    font-weight: 300;
+  }
+}

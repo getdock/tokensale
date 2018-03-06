@@ -1,0 +1,76 @@
+@black: rgb(44, 43, 63);
+@color-primary: rgb(124, 71, 171);
+@color-secondary: rgb(97, 96, 120);
+
+@mobile: ~"(max-width: 767px)";
+@no-mobile: ~"(min-width: 768px)";
+@tablet: ~"(min-width: 768px) and (max-width: 1109px)";
+@desktop: ~"(min-width: 1110px)";
+@no-desktop: ~"(max-width: 1109px)";
+
+.color {
+  color: @black;
+}
+
+.btnPrimary {
+  border: none;
+  background-color: @black;
+  color: white;
+  font-weight: bold;
+}
+
+.textSecondary {
+  color: @color-secondary;
+}
+
+.textSystem {
+  color: rgba(97, 96, 120, 0.67);
+}
+
+.textDanger {
+  color: rgb(243, 108, 86);
+}
+
+.sectionSubtitle {
+  font-size: 1.8rem;
+  color: @color-secondary;
+}
+
+.content {
+  max-width: 73.6rem;
+  margin: 0 auto;
+}
+
+.secondarySection {
+  background-color: rgb(246, 246, 246);
+}
+
+.linkBtn {
+  text-decoration: underline;
+  cursor: pointer;
+  color: inherit;
+}
+
+@media @mobile {
+  .tablet,
+  .desktop,
+  .no-mobile {
+    display: none !important;
+  }
+}
+
+@media @tablet {
+  .mobile,
+  .desktop,
+  .no-tablet {
+    display: none !important;
+  }
+}
+
+@media @desktop {
+  .mobile,
+  .tablet,
+  .no-desktop {
+    display: none !important;
+  }
+}

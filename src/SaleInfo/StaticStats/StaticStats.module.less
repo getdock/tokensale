@@ -1,0 +1,34 @@
+@value commonStyles: 'Components.module.less';
+@value content, textSecondary from commonStyles;
+
+@import '../../Components.module.less';
+
+.root {
+  composes: content;
+  composes: textSecondary;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media @mobile {
+    flex-wrap: wrap;
+    margin-top: 4rem;
+
+    > div {
+      width: 50%;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  }
+
+  dd {
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-left: 0;
+
+    @media @no-mobile {
+      margin-top: .9rem;
+    }
+  }
+}

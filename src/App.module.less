@@ -1,0 +1,56 @@
+@value commonStyles: 'Components.module.less';
+@value textSecondary from commonStyles;
+
+@import './Components.module.less';
+
+.app {
+  text-align: center;
+}
+
+.warning {
+  composes: textSecondary;
+  border-radius: .5rem;
+  background-color: rgb(255, 254, 234);
+  box-shadow: 0 .8rem 2rem 0 rgba(0, 0, 0, 0.14);
+  display: inline-flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.2rem 4.2rem 1.4rem 3.2rem;
+  text-align: left;
+  font-size: 1.4rem;
+
+  strong {
+    color: @black;
+  }
+}
+
+.warningLogo {
+  width: 2.9rem;
+  height: 3.1rem;
+  margin-right: 1.6rem;
+}
+
+.logo {
+  width: 17.1rem;
+  height: 4.5rem;
+  margin-top: 4.3rem;
+}
+
+.content {
+  @media @no-mobile {
+    margin-top: 7.6rem;
+  }
+}
+
+.countdown {
+  margin-top: 6rem;
+  composes: textSecondary;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+
+  time {
+    font-size: 4.5rem;
+    font-weight: 300;
+  }
+}

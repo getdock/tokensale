@@ -1,0 +1,20 @@
+{
+  "name": "tokensale",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "custom-react-scripts": "^0.2.1",
+    "moment": "^2.20.1",
+    "moment-duration-format": "^2.2.2",
+    "qrcode.react": "^0.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "https://whitelist.dock.io"
+}

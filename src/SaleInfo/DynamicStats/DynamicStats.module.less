@@ -1,0 +1,39 @@
+@value commonStyles: 'Components.module.less';
+@value content, sectionSubtitle, textSecondary from commonStyles;
+
+@import '../../Components.module.less';
+
+.root {
+  composes: content;
+  max-width: 60rem;
+  margin-top: 5.3rem;
+}
+
+.progressBar {
+  position: relative;
+  background-color: rgb(228, 228, 228);
+  border-radius: .5rem;
+  height: .6rem;
+}
+
+.progress {
+  composes: progressBar from global;
+  position: absolute;
+  left: 0;
+  border-radius: .5rem;
+  height: .6rem;
+  width: 10%;
+  display: inline-block;
+  transition: width .5s;
+}
+
+.progressPoints {
+  margin-top: .8rem;
+  display: flex;
+
+  > * {
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}
